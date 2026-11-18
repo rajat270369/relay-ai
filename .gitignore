@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Never commit accounts, sessions, invitation tokens, or workspace data
+server/data/
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and build files
+node_modules/
+dist/
+coverage/
+
+# Local server data
+server/data/
+
+# Logs and temporary files
+*.log
+*.zip
+*.tar.gz

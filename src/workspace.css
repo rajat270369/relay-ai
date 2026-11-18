@@ -1,0 +1,16 @@
+/* Shared-workspace invitation and connection states; no existing Clarity styles overwritten. */
+.workspace-join-page{min-height:100dvh;background:linear-gradient(140deg,#f7f8fe,#eeeaff);display:grid;place-items:center;padding:28px;font-family:'DM Sans',sans-serif}
+.workspace-join-card{width:min(100%,560px);padding:38px;border:1px solid #e3e5f3;border-radius:20px;background:white;box-shadow:0 25px 70px #1b254a16}
+.workspace-join-card .auth-wordmark{margin-bottom:34px}.workspace-eyebrow{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:800;color:#7963d3;letter-spacing:1px}
+.workspace-join-card h1{font-family:Manrope,sans-serif;color:#25314b;font-size:30px;line-height:1.25;margin:14px 0}.workspace-join-card>p{font-size:15px;line-height:1.7;color:#63708c}
+.workspace-join-card form{display:flex;flex-direction:column;gap:12px;margin-top:25px}.workspace-join-card form label{font-size:13px;font-weight:800;color:#3d4963}.workspace-join-card form input{border:1px solid #dce0ec;border-radius:10px;padding:15px;font-size:16px;min-width:0;color:#27354b}
+.workspace-join-card form button{min-height:47px;font-size:14px}.workspace-join-error{font-size:14px;color:#b52c4c}.workspace-join-note{margin-top:20px;border-radius:10px;background:#f4f2ff;padding:13px;display:flex;gap:10px;font-size:13px;line-height:1.55;color:#736b98}.workspace-join-note svg{flex:0 0 auto}.workspace-signout{margin-top:24px;border:0;background:transparent;color:#7564c8;display:flex;gap:9px;align-items:center;font-weight:750}
+.workspace-share{border:1px solid #e7e4fb;border-radius:12px;padding:15px;margin:18px 0;background:#faf9ff}.workspace-share h3{font-size:15px;margin:0 0 5px;color:#33405e}.workspace-share p{font-size:12px;line-height:1.5;color:#737d93;margin:0 0 11px}.workspace-share>button{font-size:13px;border:1px solid #dad5f6;background:white;color:#6555c5;border-radius:8px;padding:10px;font-weight:800;cursor:pointer}.workspace-invite-code{font-family:monospace;font-size:12px;overflow-wrap:anywhere;color:#343d64;background:white;border:1px dashed #b6ade6;border-radius:7px;padding:10px;margin-top:10px}.workspace-share small{display:block;font-size:11px;color:#69758c;margin-top:7px}.workspace-sync{color:#63708d;font-size:12px}.workspace-sync-error{color:#ad324e}
+@media(max-width:520px){.workspace-join-card{padding:22px}.workspace-join-card h1{font-size:25px}}
+
+/* An unlinked client can deliberately choose the assistant dashboard. */
+.workspace-role-switch{margin-top:20px;padding:16px;border:1px solid #e2e4f1;border-radius:12px;background:#fafbff}
+.workspace-role-switch p{margin:0 0 10px;color:#33405e;font-size:14px;font-weight:750}
+.workspace-role-switch button{border:1px solid #7461d4;color:#654fc1;background:white;border-radius:8px;padding:12px 14px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:750;cursor:pointer}
+.workspace-role-switch button:disabled{opacity:.55;cursor:wait}
+.workspace-role-switch small{display:block;color:#6b7690;font-size:12px;line-height:1.55;margin-top:9px}

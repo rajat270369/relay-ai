@@ -1,0 +1,70 @@
+/* === Client ⇄ Assistant handoff (demo workflow) === */
+.sidebar { overflow-y: auto; }
+.handoff-mini-badge {
+  display: inline-flex; align-items:center; flex-shrink:0;
+  padding:5px 8px; border-radius:7px;
+  color:#236e91; background:#e6f4fc; font-size:12px; font-weight:800;
+  white-space:nowrap;
+}
+.handoff-banner {
+  display:flex; align-items:flex-start; gap:12px;
+  padding:16px; margin:20px 0 0;
+  background:#eef8fc; border:1px solid #cce9f6; border-radius:12px;
+  color:#245670;
+}
+.handoff-banner-icon {
+  display:grid; place-items:center; flex:0 0 35px; height:35px;
+  border-radius:10px; background:#d6effa; color:#247eaa;
+}
+.handoff-banner b { display:block; font-size:15px; }
+.handoff-banner p { margin:5px 0 0; font-size:14px; line-height:1.55; }
+.handoff-banner p.handoff-note-preview { font-weight:650; color:#376b85; }
+.handoff-return-button { border-color:#cce8f5; color:#236f95; }
+.handoff-history {
+  border:1px solid #e9ebf4; border-radius:12px;
+  background:#fbfcff; margin:23px 0 0; padding:17px;
+}
+.handoff-history-item { display:flex; align-items:flex-start; gap:10px; margin:14px 0 0; }
+.handoff-history-dot { display:block; flex-shrink:0; width:9px; height:9px; border-radius:50%; background:#8d7aee; margin-top:6px; }
+.handoff-history-item b { display:block; color:#39445d; font-size:14px; }
+.handoff-history-item span:not(.handoff-history-dot) { display:block; color:#8a95aa; font-size:12px; margin-top:3px; }
+.handoff-history-item p { margin:5px 0 0; font-size:13px; line-height:1.6; color:#61708a; }
+.client-handoff-actions {
+  margin-top:24px; padding:20px; background:#f7f5ff;
+  border:1px solid #e8e1fa; border-radius:12px;
+}
+.client-handoff-actions label { display:block; margin:12px 0 8px; font-size:14px; font-weight:750; color:#414e6c; }
+.client-handoff-actions textarea {
+  display:block; width:100%; padding:12px 13px; resize:vertical;
+  font-size:15px; line-height:1.6; border:1px solid #dedcf1;
+  background:white; border-radius:10px; color:#3b4861;
+}
+.client-handoff-actions>p { margin:9px 0 0; color:#766e98; font-size:13px; line-height:1.6; }
+.client-handoff-actions .client-detail-actions { margin:16px 0 0; }
+.client-handoff-actions .client-detail-actions>* { min-width:0; white-space:normal; }
+.client-activity-panel {
+  border:1px solid #e6e9f4; border-radius:15px;
+  background:white; padding:22px; margin-top:30px;
+  box-shadow:0 3px 15px #1c28500a;
+}
+.client-activity-heading { display:flex; justify-content:space-between; gap:15px; align-items:center; margin-bottom:12px; }
+.client-activity-heading h2 { font-family:Manrope,sans-serif; font-size:21px; margin:5px 0 0; color:#26324b; }
+.client-activity-hint { font-size:12px; color:#9aa5b7; }
+.client-activity-row { display:flex; align-items:center; gap:13px; padding:15px 2px; border-top:1px solid #eff0f5; }
+.client-activity-symbol { flex:0 0 34px; height:34px; display:grid; place-items:center; border-radius:10px; background:#e7f8ef; color:#2b9976; }
+.client-activity-details { min-width:0; flex:1; }
+.client-activity-details b { display:block; font-size:15px; color:#34425a; overflow-wrap:anywhere; }
+.client-activity-details span { display:block; margin-top:4px; font-size:13px; color:#929bad; }
+.client-activity-action { display:flex; gap:5px; align-items:center; background:#f4f1ff; color:#765fcb; border:1px solid #e9e0ff; border-radius:8px; padding:9px 10px; font-size:13px; font-weight:800; }
+.client-activity-action:hover { background:#ece6ff; }
+@media(max-width:520px) {
+  .client-activity-panel { padding:14px; }
+  .client-activity-heading { align-items:flex-start; flex-direction:column; }
+  .client-activity-row { gap:8px; flex-wrap:wrap; }
+  .client-activity-details { flex:1 1 calc(100% - 50px); }
+  .client-activity-action { margin-left:42px; }
+  .client-handoff-actions { padding:15px; }
+  .client-handoff-actions .client-detail-actions { flex-direction:column; }
+  .handoff-banner { padding:12px; }
+  .handoff-mini-badge { font-size:11px; }
+}
